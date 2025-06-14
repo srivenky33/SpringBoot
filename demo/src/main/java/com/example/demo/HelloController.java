@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class HelloController {
     private HelloService helloservice;
-            //comment
+            //comment1
     public HelloController(HelloService service)
     {
         this.helloservice=service;
@@ -18,7 +18,7 @@ public class HelloController {
     @GetMapping("/hello")
     public String sayHello(@RequestParam(name="user", defaultValue="world") String user)
     {
-        //hiii
+        //hii
        return helloservice.greet(user);
     }
 
