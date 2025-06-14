@@ -18,6 +18,7 @@ public class HelloController {
     @GetMapping("/hello")
     public String sayHello(@RequestParam(name="user", defaultValue="world") String user)
     {
+        //hi
        return helloservice.greet(user);
     }
 
